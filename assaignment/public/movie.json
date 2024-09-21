@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "Paneer Tikka",
+        "Price": 120,
+        "image": "/images/chicken-skewers-with-slices-sweet-peppers-dill.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Sea food",
+        "Price": 800,
+        "image": "/images/delicious-lobster-gourmet-seafood.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Vegetable Soup",
+        "Price": 200,
+        "image": "/images/healthy-vegetable-soup-cooked-with-fresh-meat-generated-by-ai.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Penne Pasta",
+        "Price": 248,
+        "image": "/images/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Rice",
+        "Price": 208,
+        "image": "/images/side-view-rice-garnish-with-fried-onion-carrot-greens-chili-pepper-table.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Penne Pasta",
+        "Price": 240,
+        "image": "/images/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Traditional Indian Soup",
+        "Price": 289,
+        "image": "/images/traditional-indian-soup-lentils-indian-dhal-spicy-curry-bowl-spices-herbs-rustic-black-wooden-table (1).jpg"
+    },
+    {
+        "id": 8,
+        "title": "Sea food",
+        "Price": 800,
+        "image": "/images/delicious-lobster-gourmet-seafood.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Sea food",
+        "Price": 800,
+        "image": "/images/delicious-lobster-gourmet-seafood.jpg"
+    }
+]
