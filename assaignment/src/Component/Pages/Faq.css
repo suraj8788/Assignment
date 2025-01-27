@@ -1,0 +1,22 @@
+.accordion-button:not(.collapsed) .accordion-toggler-icon {
+    color: white !important;
+}
+
+.accordion-button:focus, .accordion-button:active {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.accordion-button .accordion-toggler-icon {
+    color: white !important;
+}
+
+/* Ensure the icon color stays white when the button is expanded */
+.accordion-button:not(.collapsed) .accordion-toggler-icon {
+    color: white !important;
+}
+
+/* Ensure the icon color stays white when the button is collapsed */
+.accordion-button.collapsed .accordion-toggler-icon {
+    color: white !important;
+}

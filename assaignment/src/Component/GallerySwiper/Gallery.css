@@ -7,3 +7,61 @@
 .alice-carousel {
     height: auto;
 }
+.gradient-btn {
+    background: linear-gradient(to right, #5c258d 0%, #330f7a 51%, #5c258d 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0.7rem 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gradient-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  .custom-link {
+    color: #746bff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .custom-link:hover {
+    color: #5b4ae0;
+    text-decoration: underline;
+  }
+
+  .blink-effect {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block; /* Ensure the span behaves as inline-block for animations */
+    border-right: 0.1em solid white; /* Blinking cursor effect */
+    animation: blink 0.7s step-end infinite;
+  }
+  
+  @keyframes blink {
+    from {
+      border-color: white;
+    }
+    to {
+      border-color: transparent;
+    }
+  }
+
+  .typing-effect {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    border-right: 0.1em solid white;
+    animation: typing 2s steps(10, end), blink 0.7s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
