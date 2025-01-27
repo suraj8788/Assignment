@@ -14,13 +14,10 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" element={<Gallery />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/feature" element={<Feature />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+        <Gallery />
+        <About />
+        <Feature />
+        <FAQ />
       <Footer />
     </Router>
   );
