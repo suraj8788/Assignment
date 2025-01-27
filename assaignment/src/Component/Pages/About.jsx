@@ -7,6 +7,10 @@ export default function About() {
         <div style={{ backgroundColor: "#0f0a13", padding: "3rem 0" }}>
             <section class="why-choose-us active">
                 <div class="container">
+                    <div className="mb-5">
+                        <h1 className="text-white text-center">About Us</h1>
+                    </div>
+
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="finix-text">
