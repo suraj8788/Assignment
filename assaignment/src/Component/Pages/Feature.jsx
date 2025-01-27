@@ -1,8 +1,9 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import Feature1 from "../../Assets/Logo/feature1.png";
 import Feature2 from "../../Assets/Logo/feature2.png";
 import Feature3 from "../../Assets/Logo/feature3.png";
+import { Carousel } from "react-responsive-carousel";
 
 const features = [
   {
@@ -52,32 +53,47 @@ export default function Feature() {
         <h3 className="mb-5" style={{ fontWeight: "600" }}>
           Why Choose Us?
         </h3>
-        <div className="row g-4">
+        <Carousel
+          showThumbs={false} // Disable thumbnails
+          showArrows={false} // Disable navigation arrows
+          showIndicators={false} // Disable pagination dots
+          showStatus={false} // Disable status bar
+          infiniteLoop
+          autoPlay
+          interval={1500}
+          swipeable
+          emulateTouch
+          centerMode
+          centerSlidePercentage={33} // Show 3 items on large screens
+        >
           {features.map((feature) => (
-            <div className="col-md-4" key={feature.id}>
+            <div key={feature.id} className="p-4">
               <div
-                className="p-4 feature-card"
+                className="feature-card"
                 style={{
                   background: "#1a1a2e",
                   borderRadius: "20px",
                   boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.5)",
-                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  padding: "2rem",
+                  textAlign: "center",
+                  margin: "auto",
                 }}
               >
                 <div className="mb-3">
-                  <img src={feature.imgSrc} alt={feature.title} width="60px" />
+                  <img src={feature.imgSrc} alt={feature.title} style={{width:"60px"}} />
                 </div>
                 <h5 className="fw-bold">{feature.title}</h5>
                 <p>{feature.description}</p>
               </div>
             </div>
           ))}
-        </div>
+        </Carousel>
       </div>
       <style>
         {`
           .feature-card:hover {
             transform: scale(1.05);
+            transition: transform 0.3s ease;
             box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
           }
         `}

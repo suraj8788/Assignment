@@ -50,6 +50,7 @@ export default function FAQ() {
                     </div>
                 </div>
             </div>
+            <hr style={{color:"white"}}></hr>
         </div>
     )
 }
