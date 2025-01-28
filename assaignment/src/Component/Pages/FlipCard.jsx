@@ -1,7 +1,8 @@
 import React from "react";
 import "./FlipCard.css";
-import Image1 from "../../Assets/Logo/01.593f9751cfa360a67e81.webp"
+import Image2 from "../../Assets/Logo/itEcpert.webp"
 import Image3 from "../../Assets/Logo/01.c27f313885854ae9ebd7.webp"
+import Image4 from "../../Assets/Logo/01.8bae4ffdd8519af2df4d.webp"
 
 const FlipCard = () => {
     const cardData = [
@@ -9,7 +10,7 @@ const FlipCard = () => {
             id: 1,
             title: "Mobile Developer",
             text: "Hover to see the image!",
-            image: Image1,
+            image: Image2,
         },
         {
             id: 2,
@@ -27,7 +28,7 @@ const FlipCard = () => {
             id: 4,
             title: "React Developer",
             text: "Hover to see the image!",
-            image: Image3,
+            image: Image4,
         },
     ];
     
