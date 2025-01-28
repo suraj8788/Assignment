@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function GoogleMap() {
     return (
-        <div style={{ backgroundColor: "#0f0a13"}}>
+        <div style={{ backgroundColor: "#0f0a13",padding: "4rem 0"}}>
             <div className="container">
-                <h2 className="text-center mb-4 text-white">Our Location</h2>
+                <h2 className="text-center mb-5 text-white">Our Location</h2>
                 <div className="row justify-content-center">
                     <div className="col-md-12">
                         <div

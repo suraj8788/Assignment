@@ -5,6 +5,7 @@ import About from "../Pages/About";
 import Feature from "../Pages/Feature";
 import Map from "../Pages/Map"
 import FAQ from "../Pages/FAQ";
+import FlipCard from "../Pages/FlipCard";
 
 const HomePage = () => {
 
@@ -54,6 +55,7 @@ const HomePage = () => {
     </div>
     <About/>
     <Feature/>
+    <FlipCard/>
     <Map/>
     <FAQ/>
     </>

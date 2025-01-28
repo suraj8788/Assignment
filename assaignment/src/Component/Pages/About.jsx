@@ -16,7 +16,7 @@ export default function About() {
                             <div class="finix-text">
 
                                 {/* <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> */}
-                                <img src="https://raw.githubusercontent.com/farazc60/Project-Images/main/why_choose_us.png" alt="" />
+                                <img src="https://raw.githubusercontent.com/farazc60/Project-Images/main/why_choose_us.png" alt="" style={{width:"90%"}}/>
                                 <div class="ct-btn">
                                     <a href="#" class=""><i class="fas fa-play-circle"></i></a>
                                 </div>
