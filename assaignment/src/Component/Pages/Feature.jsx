@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import Feature1 from "../../Assets/Logo/feature1.png";
 import Feature2 from "../../Assets/Logo/feature2.png";
 import Feature3 from "../../Assets/Logo/feature3.png";
 import { Carousel } from "react-responsive-carousel";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const features = [
   {
@@ -46,11 +48,15 @@ const features = [
 ];
 
 export default function Feature() {
+  useEffect(() => {
+    AOS.init({ duration: 1200 }); // AOS initialization
+  }, []);
+
   return (
     <div style={{ backgroundColor: "#0f0a13", padding: "4rem 0" }}>
       <div className="container text-light text-center">
-        <h2 className="fw-bold mb-3">Features</h2>
-        <h3 className="mb-5" style={{ fontWeight: "600" }}>
+        <h2 className="fw-bold mb-3" data-aos="fade-up">Features</h2>
+        <h3 className="mb-5" style={{ fontWeight: "600" }} data-aos="fade-up">
           Why Choose Us?
         </h3>
         <Carousel
@@ -67,7 +73,7 @@ export default function Feature() {
           centerSlidePercentage={33} // Show 3 items on large screens
         >
           {features.map((feature) => (
-            <div key={feature.id} className="p-4">
+            <div key={feature.id} className="p-4" data-aos="fade-up">
               <div
                 className="feature-card"
                 style={{
@@ -80,10 +86,15 @@ export default function Feature() {
                 }}
               >
                 <div className="mb-3">
-                  <img src={feature.imgSrc} alt={feature.title} style={{width:"60px"}} />
+                  <img
+                    src={feature.imgSrc}
+                    alt={feature.title}
+                    style={{ width: "60px" }}
+                    data-aos="zoom-in"
+                  />
                 </div>
-                <h5 className="fw-bold">{feature.title}</h5>
-                <p>{feature.description}</p>
+                <h5 className="fw-bold" data-aos="fade-up">{feature.title}</h5>
+                <p data-aos="fade-up">{feature.description}</p>
               </div>
             </div>
           ))}
